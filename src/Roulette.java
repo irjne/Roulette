@@ -37,7 +37,9 @@ public class Roulette
 
     public Sector extraction ()
     {
-        int extraction = (int)(Math.random()*37);
+        Random random = new Random ();
+        int extraction = random.nextInt(36);
+        //int extraction = (int)(Math.random()*37);
 
         if (extraction >= 0 && extraction <= 37)
         {
